@@ -19,6 +19,10 @@ html{
     color: var(--primary-color);
 }
 
+
+body{
+    overflow: hidden;
+}
 :root{
     --background-color: #01231f;
     --primary-color: white;
