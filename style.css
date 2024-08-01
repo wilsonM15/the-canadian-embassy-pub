@@ -280,7 +280,7 @@ section {
     text-align: center;
     font-size: 4rem;
     color: red;
-    margin-top: 4rem;
+    margin-top: -10rem;
     margin-left: 0rem;
 }
 
@@ -569,7 +569,7 @@ section {
 
 .about-us-text{
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-family: "poppins";
     color: var(--primary-color);
     text-align: justify;
@@ -617,7 +617,7 @@ section {
 
 
 #text-menu{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: var(--primary-color);
     text-align: justify;
     text-justify: distribute-all-lines;
@@ -630,21 +630,21 @@ section {
 }
 
 #subtext-menu{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-family: "poppins";
     color: var(--primary-color);
     text-align: justify;
     text-justify: distribute-all-lines;
     margin-top: -25rem;
-    padding: 1rem 2rem 0rem 2rem;
+    padding: 2rem 2rem 0rem 2rem;
     letter-spacing: .1rem;
     word-spacing: .1rem;
     
 }
 
 .menu-button{
-    width: 10rem;
-    height: 5rem;
+    width: 12rem;
+    height: 6rem;
     object-fit: cover;
     margin-top: -10rem;
     border-radius: 1rem;
@@ -662,10 +662,12 @@ section {
     text-decoration: none;
     color: var(--primary-color);
     transition: color 0.3s ease;
+    font-size: 1.5rem;
 }
 
 .menu-button a:hover{
     color: var(--secondary-color);
+    font-size: 1.7rem;
 }
 /*------------------------sub-section-menu----------------------*/
 
@@ -880,7 +882,7 @@ section {
 .subtext-reservations{
     text-align: justify;
     word-spacing: -.1rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: "poppins";
     color: var(--primary-color);
     padding: 1rem 2rem 0rem 2rem;
