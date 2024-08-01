@@ -569,7 +569,7 @@ section {
 
 .about-us-text{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: "poppins";
     color: var(--primary-color);
     text-align: justify;
@@ -617,7 +617,7 @@ section {
 
 
 #text-menu{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: var(--primary-color);
     text-align: justify;
     text-justify: distribute-all-lines;
@@ -630,13 +630,13 @@ section {
 }
 
 #subtext-menu{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: "poppins";
     color: var(--primary-color);
     text-align: justify;
     text-justify: distribute-all-lines;
     margin-top: -25rem;
-    padding: 2rem 2rem 0rem 2rem;
+    padding: 5rem 2rem 0rem 2rem;
     letter-spacing: .1rem;
     word-spacing: .1rem;
     
@@ -882,7 +882,7 @@ section {
 .subtext-reservations{
     text-align: justify;
     word-spacing: -.1rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: "poppins";
     color: var(--primary-color);
     padding: 1rem 2rem 0rem 2rem;
@@ -1115,6 +1115,14 @@ section {
 .footer a{
     color: var(--primary-color);
 
+
+}
+
+.footer p{
+    font-size: .8rem;
+    font-family: "Inter";
+    padding-left: 1rem;
+    padding-right: 2rem;
 }
 
 .footer a:hover{
