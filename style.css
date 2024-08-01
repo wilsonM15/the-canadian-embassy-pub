@@ -387,7 +387,7 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: -10rem;
     margin-bottom: 1rem;
     padding: 1rem;
    
@@ -516,7 +516,7 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: -5rem;
+    margin-top: -8rem;
  
 }
 
@@ -570,13 +570,12 @@ section {
 .about-us-text{
     text-align: center;
     font-size: 1.4rem;
-    font-weight: 400;
-    font-family: "inter";
+    font-family: "poppins";
     color: var(--primary-color);
     text-align: justify;
     line-height: 2rem;
     text-justify: distribute-all-lines;
-    padding: 1rem 0rem;
+    padding: 1rem 2rem 0rem 2rem;
 
 }
 
@@ -619,28 +618,27 @@ section {
 
 #text-menu{
     font-size: 1.4rem;
-    font-weight: 400;;
     color: var(--primary-color);
     text-align: justify;
     text-justify: distribute-all-lines;
     margin-top: -15rem;
-    padding: 1rem 0rem;
+    padding: 1rem 2rem 0rem 2rem;
     word-spacing: -.1rem;
     letter-spacing: .1rem;
-    font-family: "inter";
+    font-family: "poppins";
    
 }
 
 #subtext-menu{
     font-size: 1.4rem;
-    font-family: "inter";
-    font-weight: 400;;
+    font-family: "poppins";
     color: var(--primary-color);
-    text-align:justify;
+    text-align: justify;
     text-justify: distribute-all-lines;
     margin-top: -25rem;
-    padding: 1rem 0rem;
+    padding: 1rem 2rem 0rem 2rem;
     letter-spacing: .1rem;
+    word-spacing: .1rem;
     
 }
 
@@ -801,6 +799,7 @@ section {
     color: var(--primary-color);
     margin-top: 12rem;
     letter-spacing: .9px;
+    padding: 1rem 2rem 0rem 2rem;
 }
 
 .text-calendar{
@@ -882,10 +881,10 @@ section {
     text-align: justify;
     word-spacing: -.1rem;
     font-size: 1.3rem;
-    font-weight: 400;
-    font-family: "inter";
+    font-family: "poppins";
     color: var(--primary-color);
-    padding: 1rem 1rem;
+    padding: 1rem 2rem 0rem 2rem;
+
 }
 
 .reservations-image{

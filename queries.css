@@ -12,6 +12,7 @@
 
     .time-open{
         margin-left: .1rem;
+        
     }
 
 
@@ -22,6 +23,10 @@
         margin-left: 0rem;
     }
 
+    .squares{
+        margin-top: -15rem;
+    }
+ 
 
     #poutine{
         padding-left: 6rem;
@@ -80,7 +85,12 @@
         margin-top: 2rem;
         margin-left: 3rem;
     }
+    
 
+    .footer a{
+        font-size: 1rem;
+       
+    }
 
 };
 
