@@ -40,6 +40,11 @@
     }
 
 
+    .about-us-text{
+        padding-left: -8rem;
+        padding-right: 9rem;
+    }
+
     .all-staff{
         width: 25rem;
         height: 35rem;
@@ -70,6 +75,13 @@
       
     }
 
+
+    .subtext-reservations{
+        padding-right: 5rem;
+        padding-left: 7rem;
+        margin-left: -5rem;
+    }
+
     .event-reservations{
         width: 10rem;
         height: 3rem;
@@ -87,7 +99,9 @@
         margin-left: 3rem;
     }
     
-    
+
 
 };
+
+
 
