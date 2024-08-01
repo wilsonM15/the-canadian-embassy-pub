@@ -1114,6 +1114,7 @@ section {
 
 .footer a{
     color: var(--primary-color);
+    font-size: .9rem;
 
 
 }
