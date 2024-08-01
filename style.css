@@ -6,7 +6,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'montserrat', 'inter'; 
+    font-family: 'montserrat', 'inter', 'poppins'; 
 
 }
 
@@ -1119,7 +1119,7 @@ section {
 }
 
 .footer p{
-    font-size: .8rem;
+    font-size: .6rem;
     font-family: "Inter";
     padding-left: 1rem;
     padding-right: 2rem;
