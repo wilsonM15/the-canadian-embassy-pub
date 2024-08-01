@@ -11,12 +11,12 @@ body,
 input,
 textarea {
   font-family: "Poppins", sans-serif;
-  background-color: #012924;
+  background-color: #ffffff;
   
 }
 
 .container{
-  margin-left: 0rem;
+  margin-left: -1.8rem;
 }
 
 .form {
