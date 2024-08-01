@@ -157,8 +157,8 @@ section {
     justify-content: center;
     align-items: center;
     margin-top: 5rem;
-    -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: scale-up-center 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-center 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
             @-webkit-keyframes scale-up-center {
                 0% {
@@ -421,7 +421,8 @@ section {
     font-family: "poppins";
     color: var(--primary-color);
     padding: 1rem 10rem 1rem 10rem;
-    margin-bottom: 5rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -471,7 +472,6 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
 }
 
 #pool-table{
@@ -517,8 +517,7 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: -8rem;
- 
+    margin-top: -12rem;
 }
 
 #canada-day{
