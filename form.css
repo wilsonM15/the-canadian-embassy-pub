@@ -224,9 +224,20 @@ textarea.input {
   color: #1ABC9C;
 }
 
+.information p{
+  text-decoration: none;
+  color: #000000;
+  
+
+}
+
 .icon {
   width: 28px;
   margin-right: 0.7rem;
+}
+
+.contact-form i{
+  color: #f02405;
 }
 
 .contact-info:before {
