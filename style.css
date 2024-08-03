@@ -1196,7 +1196,7 @@ section {
 
     .reservations-image{
         width: 16rem;
-        
+
         margin-left: -4rem;
        
     }
@@ -1216,6 +1216,29 @@ section {
     }
 }
 
+
+@media (max-width: 390px){
+   
+    .reservations-image{
+        width: 16rem;
+        margin-left: -9rem;
+       
+    }
+   
+    .button-container{
+        margin-left: -4rem;
+    }
+
+    .event-reservations {
+        width: 10rem;
+        
+
+    }
+
+    .table-reservations{
+        width: 10rem;
+    } 
+}
 
 @media (max-width: 455px){
     #image5{
