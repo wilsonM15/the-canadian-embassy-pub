@@ -240,7 +240,6 @@ section {
 
 #image5{
     visibility: hidden;
-    visibility: hidden;
 }
 
 
@@ -947,7 +946,7 @@ section {
     width: 20rem;
     height: 30rem;
     object-fit: cover;
-    margin: 2rem 1rem;
+    margin: 2rem 1rem 0rem -2rem;
     border-radius: 2rem;
     box-shadow: 0px 8px 16px 0px rgba(18, 15, 15, 0.2);
     align-items: center;
@@ -1190,8 +1189,25 @@ section {
 
 
 @media (max-width: 375px){
-    .event-reservations{
+
+    #image5{
+        visibility: hidden;
+    }
+
+    .reservations-image{
+        width: 16rem;
+        
+        margin-left: -4rem;
+       
+    }
+   
+    .button-container{
+        margin-left: -4rem;
+    }
+
+    .event-reservations {
         width: 10rem;
+        
 
     }
 
@@ -1202,6 +1218,11 @@ section {
 
 
 @media (max-width: 455px){
+    #image5{
+        visibility: hidden;
+    }
+
+
     .pink-square{
         margin-bottom: 5rem;
     }
