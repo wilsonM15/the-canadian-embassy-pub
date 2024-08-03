@@ -801,39 +801,89 @@ section {
 
 .text-calendar{
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: "inter";
     color: var(--primary-color);
     margin-top: 20rem;
     letter-spacing: .9px;
     text-transform: capitalize;
-    -webkit-animation: blink-1 2.9s both;
-    animation: blink-1 2.9s both;
+    heartbeat {
+        -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+                animation: heartbeat 1.5s ease-in-out infinite both;
     }
 
-
-    @-webkit-keyframes blink-1 {
-        0%,
-        50%,
-        100% {
-          opacity: 1;
+    @-webkit-keyframes heartbeat {
+        from {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: center center;
+                  transform-origin: center center;
+          -webkit-animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
         }
-        25%,
-        75% {
-          opacity: 0;
+        10% {
+          -webkit-transform: scale(0.91);
+                  transform: scale(0.91);
+          -webkit-animation-timing-function: ease-in;
+                  animation-timing-function: ease-in;
+        }
+        17% {
+          -webkit-transform: scale(0.98);
+                  transform: scale(0.98);
+          -webkit-animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
+        }
+        33% {
+          -webkit-transform: scale(0.87);
+                  transform: scale(0.87);
+          -webkit-animation-timing-function: ease-in;
+                  animation-timing-function: ease-in;
+        }
+        45% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
         }
       }
-      @keyframes blink-1 {
-        0%,
-        50%,
-        100% {
-          opacity: 1;
+      @keyframes heartbeat {
+        from {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: center center;
+                  transform-origin: center center;
+          -webkit-animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
         }
-        25%,
-        75% {
-          opacity: 0;
+        10% {
+          -webkit-transform: scale(0.91);
+                  transform: scale(0.91);
+          -webkit-animation-timing-function: ease-in;
+                  animation-timing-function: ease-in;
+        }
+        17% {
+          -webkit-transform: scale(0.98);
+                  transform: scale(0.98);
+          -webkit-animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
+        }
+        33% {
+          -webkit-transform: scale(0.87);
+                  transform: scale(0.87);
+          -webkit-animation-timing-function: ease-in;
+                  animation-timing-function: ease-in;
+        }
+        45% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
         }
       }
+      
+    }
+          
+      
       
 .text-calendar a{
     color: var(--primary-color);
@@ -850,6 +900,7 @@ section {
 
 .text-calendar a:hover{
     color: var(--secondary-color);
+    
 }
 
 
@@ -1352,7 +1403,6 @@ section {
 
     .solo-pool-table{
         position: absolute;
-        margin-left: -40rem;
         margin-top: -10rem;
 
     }
@@ -1360,8 +1410,7 @@ section {
     #pool-table{
         position: absolute;
         font-size: 2rem;
-        margin-left: -40rem;
-        padding-top: 22rem;
+        padding-top: 26rem;
 
     }
 
@@ -1408,9 +1457,9 @@ section {
     #sports-w-friends{
         font-size: 2rem;
         margin-top: 22rem;
-        margin-left: -35rem;
+        margin-left: -40rem;
         padding-left: 0rem;
-        padding-right: 5rem;
+        padding-right: 0rem;
         width: 29rem;
     }
 
@@ -1424,17 +1473,19 @@ section {
     }
 
     .about-us-text{
-        font-size: 2rem;
+        font-size: 3rem;
         margin-top: 4rem;
         line-height: 3rem;
-        padding-left: 25rem;
-        padding-right: 25rem;
+        width: auto;
+        
+
+        
     }
 
 
     .all-staff{
-        width: 50rem;
-        height: 30rem;
+        width: 70rem ;
+        height: 60rem;
         margin-top: 10rem;
         background-color: transparent;
 
@@ -1447,35 +1498,54 @@ section {
     
 
     .our-menu{
-        font-size: 3rem;
+        font-size: 4rem;
         
     }
 
     #text-menu{
-        font-size: 2rem;
-        padding-left: 25rem;
-        padding-right: 25rem;
+        font-size: 3rem;
+        width: auto;
+      
     }
 
     #subtext-menu{
-        font-size: 2rem;
+        font-size: 3rem;
         margin-top: -30rem;
-        padding-left: 25rem;
-        padding-right: 25rem;
+        width: auto;
+    }
+
+    .menu-button{
+       
+        width: 20rem;
+        height: 18rem;
+       
+    }
+
+    .menu-button a{
+        font-size: 4rem;
+        padding: 3.5rem;
+
+    }
+
+    .menu-button a:hover{
+        color: pink;
+        font-size: 4rem;
     }
 
 
 
 
     .sports-section{
-        padding-left: 25rem;
-        padding-right: 25rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+       
 
     }
 
 
     .sports{
         font-size: 15rem;
+         margin-top: 12rem;
     }
 
 
@@ -1486,77 +1556,116 @@ section {
 
 
     .text-sports{
-        font-size: 2rem;
+        font-size: 3rem;
        
     }
 
     .text-calendar{
-        font-size: 2rem;
+        font-size: 3rem;
+        margin-top: 35rem;
       
     }
     
 
     .reservations-section{
-        padding-left: 20rem;
-        padding-right: 20rem;
+        width: auto;
+       
 
     }
 
     .reservations{
-        font-size: 3rem;
+        font-size: 4rem;
         
     }
 
     .subtext-reservations{
-        font-size: 2rem;
+        font-size: 3rem;
+        width: auto;
+        padding:5rem 5rem 5rem 5rem;
+
+
     }
 
     .reservations-image{
-        width: 40rem;
-        height: 40rem;
+        width: 60rem;
+        height: 60rem;
         border-radius: 1rem;
         float: none;
+        margin-left: 5rem;
         
     }
 
     .event-reservations{
-        margin-left: 50rem;
-        margin-top: -35rem;
-        width: 17rem;
-        height: 7rem;
-        font-size: 1.7rem
+        margin-left: 15rem;
+        width: 22rem;
+        height: 10rem;
+        font-size: 2.7rem;
+        text-align: center;
+    }
+
+    .event-reservations a{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
 
     .table-reservations{
-        font-size: 1.7rem;
-        margin-top: 10rem;
-        width: 17rem;
-        height: 7rem;
-        margin-left: 50rem;
+        font-size: 2.7rem;
+        width: 22rem;
+        height: 10rem;
+        margin-left: 15rem;
 
     }
 
 
     .button-container{
         float: right;
+        margin-top: -20rem;
+        margin-left: 60rem;
+        position: absolute;
+
     }
 
 
 
     .footer-section{
         width: 100%;
+        font-size: 4rem;
 
 
     }
 
-    .links ul{
-        justify-content: space-between;
+    #quick-links{
+        font-size: 3rem;
     }
 
+    .links li a{
+        font-size: 2rem;
+    }
 
+    .contact-container{
+        margin-left: 30rem;
+        margin-top: -20.2rem;
+    }
+    #contact{
+        font-size: 3rem;
+    }
 
+    .contact-us li a{
+        font-size: 2rem;
 
+    }
+    
+
+    .footer p{
+        font-size: 2rem;
+    }
+
+    .footer a{
+        font-size: 2rem;
+        
+    }
 
 
 
