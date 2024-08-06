@@ -25,7 +25,7 @@ textarea {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  z-index: 100;
   overflow:hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -277,7 +277,7 @@ textarea.input {
 @media (max-width: 850px) {
 
   .container{
-    padding-left: 17rem;
+    padding-left: 1rem;
     padding-right: 5rem;
   }
 
