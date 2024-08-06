@@ -3,6 +3,7 @@
 @media (max-width: 320px) {
     #image5{
         visibility: hidden;
+        display: none;
     }
 
     .arrow-down::before {

@@ -1193,6 +1193,7 @@ section {
 
     #image5{
         visibility: hidden;
+        display: none;
     }
 
 
@@ -1219,6 +1220,11 @@ section {
 
 
 @media (max-width: 392px){
+
+    #image5{
+        visibility: hidden;
+        display: none;
+    }
    
     .reservations-image{
         width: 16rem;
@@ -1248,6 +1254,7 @@ section {
 
     #image5{
         visibility: hidden;
+        display: none;
     }
 
 
@@ -1285,6 +1292,7 @@ section {
 
     #image5{
         visibility: hidden;
+        display: none;
     }
 
     #poutine{
@@ -1327,6 +1335,7 @@ section {
 
     #image5{
         visibility: hidden;
+        display: none;
     }
 
     #poutine{
@@ -1373,6 +1382,7 @@ section {
 
     #image5{
         visibility: hidden;
+        display: none;
     }
 
     #poutine{
@@ -1445,6 +1455,7 @@ section {
 
     #image5{
         visibility: hidden;
+        display: none;
     }
 
     #poutine{
@@ -1517,6 +1528,7 @@ section {
 
     #image5{
         visibility: hidden;
+        display: none;
     }
 
     #poutine{
@@ -1630,6 +1642,7 @@ section {
 
     #image5{
         visibility: hidden;
+        display: none;
     }
 
     #poutine{
@@ -1744,6 +1757,7 @@ section {
 
     #image5{
         visibility: hidden;
+        display: none;
     }
 
     .arrow-down:before{
