@@ -317,74 +317,63 @@ textarea.input {
     padding: 1.5rem 0 0 0;
   }
 }
+/*
+@media (max-width: 425px) {
+  .container{
+    
+  }
 
-@media (max-width: 480px) {
-  .container {
-    padding-left: 4.5rem;
-    padding-right: 4.5rem;
+  .form {
+    grid-template-columns: 1fr;
+    margin-left: -9rem;
+    width: 100%;
+    width: 750px;
+    background-color: #0f9e8d;
+    column-width: 555px;
 
   }
 
   .contact-info:before {
-    display: none;
+    bottom: initial;
+    top: -75px;
+    right: 65px;
+    transform: scale(0.95);
   }
 
-  .square,
+  .contact-form:before {
+    top: -13px;
+    left: initial;
+    right: 70px;
+  }
+
+  .square {
+    transform: translate(140%, 43%);
+    height: 350px;
+  }
+
   .big-circle {
-    display: none;
+    bottom: 75%;
+    transform: scale(0.9) translate(-40%, 30%);
+    right: 50%;
   }
 
-  form,
-  .contact-info {
-    padding: 1.7rem 1.6rem;
+  .text {
+    margin: 1rem 0 1.5rem 0;
   }
 
-  .text,
-  .information,
-  .social-media p {
-    font-size: 0.8rem;
-  }
-
-  .title {
-    font-size: 1.15rem;
-  }
-
-  .social-icons a {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-  }
-
-  .icon {
-    width: 23px;
-  }
-
-  .input {
-    padding: 0.45rem 1.2rem;
-  }
-
-  .btn {
-    padding: 0.45rem 1.2rem;
+  .social-media {
+    padding: 1.5rem 0 0 0;
   }
 }
 
+*/
+/*
+@media (max-width: 375px) {
 
-
-@media  (max-width: 375px) {
-   
-  .container{
-    width: 100%;
-    border-radius: 2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-
-  }
-  
   .form{
     border-radius: 1rem;
-    min-width: 10rem;
-    margin-left: -2rem;
-    margin-right: -2rem;
+    margin-left: -15.5rem;
+    margin-right: 2rem;
    }
 
    .contact-form{
@@ -398,20 +387,15 @@ textarea.input {
    }
 }
 
-@media (max-width: 320px) {
-  .container{
-    width: 100%;
-    border-radius: 2rem;
-    padding-left: 1.2rem;
-    padding-right: 1rem;
+*/
+/*
+@media (min-width: 320px) and (max-width: 374) {
 
-  }
-  
   .form{
     border-radius: 1rem;
-    min-width: 10rem;
-    margin-left: -2rem;
-    margin-right: -2rem;
+    margin-left: -10rem;
+    margin-right: 2rem;
+    
    }
 
    .contact-form{
@@ -422,9 +406,9 @@ textarea.input {
 
    .information{
      font-size: 0.7rem;
-   } 
+   }
 }
-
+*/
 
 @media (max-width:1024px) {
   .container{
