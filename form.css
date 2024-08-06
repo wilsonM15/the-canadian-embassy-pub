@@ -275,6 +275,12 @@ textarea.input {
 }
 
 @media (max-width: 850px) {
+
+  .container{
+    padding-left: 17rem;
+    padding-right: 5rem;
+  }
+
   .form {
     grid-template-columns: 1fr;
   }
@@ -314,7 +320,9 @@ textarea.input {
 
 @media (max-width: 480px) {
   .container {
-    padding: 1.5rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+
   }
 
   .contact-info:before {
@@ -362,11 +370,13 @@ textarea.input {
 
 
 
-@media  (min-width: 320px) and (max-width: 375px) {
+@media  (max-width: 375px) {
    
   .container{
     width: 100%;
     border-radius: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 
   }
   
@@ -386,4 +396,123 @@ textarea.input {
    .information{
      font-size: 0.7rem;
    }
+}
+
+@media (max-width: 320px) {
+  .container{
+    width: 100%;
+    border-radius: 2rem;
+    padding-left: 1.2rem;
+    padding-right: 1rem;
+
+  }
+  
+  .form{
+    border-radius: 1rem;
+    min-width: 10rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+   }
+
+   .contact-form{
+    width: 100%;
+    
+   }
+
+
+   .information{
+     font-size: 0.7rem;
+   } 
+}
+
+
+@media (max-width:1024px) {
+  .container{
+    padding-left: 13rem;
+    padding-right: 11rem;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .contact-info:before {
+    bottom: initial;
+    top: -75px;
+    right: 65px;
+    transform: scale(0.95);
+  }
+
+  .contact-form:before {
+    top: -13px;
+    left: initial;
+    right: 70px;
+  }
+
+  .square {
+    transform: translate(140%, 43%);
+    height: 350px;
+  }
+
+  .big-circle {
+    bottom: 75%;
+    transform: scale(0.9) translate(-40%, 30%);
+    right: 50%;
+  }
+
+  .text {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  .social-media {
+    padding: 1.5rem 0 0 0;
+  }
+}
+
+
+
+@media (max-width: 1440px){
+  .container{
+    padding-left: 13rem;
+    padding-right: 11rem;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-top: 10rem;
+  }
+
+  .contact-info:before {
+    bottom: initial;
+    top: -75px;
+    right: 65px;
+    transform: scale(0.95);
+  }
+
+  .contact-form:before {
+    top: -13px;
+    left: initial;
+    right: 70px;
+  }
+
+  .square {
+    transform: translate(140%, 43%);
+    height: 350px;
+  }
+
+  .big-circle {
+    bottom: 75%;
+    transform: scale(0.9) translate(-40%, 30%);
+    right: 50%;
+  }
+
+  .text {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  .social-media {
+    padding: 1.5rem 0 0 0;
+  } 
 }

@@ -85,9 +85,9 @@
     .event-reservations{
         width: 10rem;
         height: 3rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-top: 2rem;
-        margin-left: 3rem;
+        margin-left: 6rem;
     }
 
     .table-reservations{
@@ -96,7 +96,7 @@
         height: 3rem;
         font-size: 1.1rem;
         margin-top: 2rem;
-        margin-left: 3rem;
+        margin-left: 6rem;
     }
     
 
