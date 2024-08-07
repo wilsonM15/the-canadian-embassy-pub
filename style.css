@@ -1196,7 +1196,12 @@ section {
         display: none;
     }
 
+    .about-us-text{
+        margin-left: -1.5rem;
+        margin-right: 1.5rem;
+        width: auto;
 
+    }
 
     .reservations-image{
         width: 16rem;
