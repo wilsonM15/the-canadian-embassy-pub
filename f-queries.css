@@ -69,6 +69,11 @@
         
 
       }
+
+      .information p{
+        font-size: .7rem;
+      
+      }
     
       .contact-info:before {
         bottom: initial;
@@ -120,8 +125,12 @@
         width: 100%;
         margin-left: 1rem;
         margin-top: -2rem;
-        
+      }
 
+
+      .information p{
+        font-size: 0.8rem;
+      
       }
     
       .contact-info:before {
@@ -158,7 +167,61 @@
 }
 
 
+@media (min-width: 426px) and (max-width: 732px){
+    .container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: -14rem;
+        margin-right: -10rem;
+        margin-top: -10rem;
+       
+      }
+    
+      .form {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-left: 1rem;
+        margin-top: -2rem;
+      }
 
+
+      .information p{
+        font-size: 0.8rem;
+      
+      }
+    
+      .contact-info:before {
+        bottom: initial;
+        top: -75px;
+        right: 65px;
+        transform: scale(0.95);
+      }
+    
+      .contact-form:before {
+        top: -13px;
+        left: initial;
+        right: 70px;
+      }
+    
+      .square {
+        transform: translate(140%, 43%);
+        height: 350px;
+      }
+    
+      .big-circle {
+        bottom: 75%;
+        transform: scale(0.9) translate(-40%, 30%);
+        right: 50%;
+      }
+    
+      .text {
+        margin: 1rem 0 1.5rem 0;
+      }
+    
+      .social-media {
+        padding: 1.5rem 0 0 0;
+      }   
+}
 
 
 @media (max-width:1024px) {
