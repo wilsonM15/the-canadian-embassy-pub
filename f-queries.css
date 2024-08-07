@@ -28,7 +28,7 @@
       }
 
       .information{
-        font-size: 0.7rem;
+        font-size: 0.5rem;
       }
     
       .square {
@@ -114,7 +114,7 @@
     .container{
         padding-left: 1rem;
         padding-right: 1rem;
-        margin-left: -10rem;
+        margin-left: -15rem;
         margin-right: -10rem;
         margin-top: -10rem;
        
@@ -124,8 +124,9 @@
         grid-template-columns: 1fr;
         width: 100%;
         margin-left: 1.5rem;
-        margin-right: 1rem;
+        margin-right: 5rem;
         margin-top: -2rem;
+        padding-right: 1.5rem;
       }
 
 
