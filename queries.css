@@ -1,6 +1,10 @@
 
 
 @media (max-width: 320px) {
+    .logo h1{
+        padding-left: 1rem;
+    }
+
     #image5{
         visibility: hidden;
         display: none;
@@ -42,8 +46,8 @@
 
 
     .about-us-text{
-        padding-left: -8rem;
-        padding-right: 9rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .all-staff{
@@ -67,11 +71,13 @@
         height: 25rem;
         object-fit: cover;
         margin-top: 2rem;
-        margin-left: 1.5rem;
+        margin-left: 4.5rem;
     
     }
     .button-container{
-       display: flex;
+       display: inline-flex;
+       position: relative;
+        margin-left: -4rem;
 
       
     }
@@ -82,24 +88,22 @@
         padding-left: 7rem;
         margin-left: -5rem;
     }
+   
 
-    .event-reservations{
+    .event-reservations {
         width: 10rem;
-        height: 3rem;
-        font-size: 1rem;
         margin-top: 2rem;
         margin-left: 6rem;
+        
+
     }
 
     .table-reservations{
-        display: inline-flex;
         width: 10rem;
-        height: 3rem;
-        font-size: 1.1rem;
         margin-top: 2rem;
-        margin-left: 6rem;
+        margin-left: 4rem; 
+
     }
-    
 
 
 };

@@ -294,8 +294,42 @@ section {
 .arrow-down {
     margin-top: .5rem;
     font-size: 2rem;
+    -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+                animation: pulsate-bck 0.5s ease-in-out infinite both;
+    
+    }
 
-}
+    @-webkit-keyframes pulsate-bck {
+        0% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+        50% {
+          -webkit-transform: scale(0.9);
+                  transform: scale(0.9);
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+      }
+      @keyframes pulsate-bck {
+        0% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+        50% {
+          -webkit-transform: scale(0.9);
+                  transform: scale(0.9);
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+      }
+    
+ 
+
 
 .arrow-down:before {
     content: '';
@@ -306,8 +340,11 @@ section {
     height: 15px;
     transform: rotate(45deg);
     position: absolute;
-    left: 48%;
-}
+    left: 47.5%;
+    
+    }
+    
+
 
 
 
@@ -1256,21 +1293,24 @@ section {
     }
 
     .about-us-text{
-        margin-left: -1.5rem;
-        margin-right: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
         width: auto;
 
     }
 
 
     .subtext-reservations{
-        margin-left: -1.5rem;
+        margin-left: -1rem;
         margin-right: 1.5rem;
     }
 
     .reservations-image{
-        width: 19rem;
-        margin-right: -1rem;
+        width: 25rem;
+        height: 29rem;
+        left: -3rem;
+        position: relative;
+
     }
    
     .button-container{
