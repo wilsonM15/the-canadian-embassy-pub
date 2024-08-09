@@ -1186,7 +1186,66 @@ section {
 
 
 
+@media (min-width: 321px) and (max-width: 357px) {
+    .logo h1{
+        padding-left: 1rem;
+    }
 
+
+    #image5{
+        visibility: hidden;
+        display: none;
+    }
+
+    .about-us-text{
+        padding-left: 4rem;
+        padding-right: 1rem;
+        width: auto;
+
+    }
+
+    .all-staff{
+        width: 300px;
+        margin-left: -1rem;
+    }
+
+   
+    .subtext-reservations{
+        padding-left: 4rem;
+        padding-right: -2rem;
+        width: auto;
+    }
+
+    .reservations-image{
+        position: relative;
+        width: 19rem;
+        height: 25rem;
+        left: -3rem;
+    }
+   
+    .button-container{
+        padding-right: 5rem;
+        position: relative;
+        top: 4rem;
+        left: -3rem;
+
+
+        
+    }
+
+    .event-reservations {
+        position: relative;
+        width: 9rem;
+        
+
+    }
+
+    .table-reservations{
+        position: relative;
+        width: 9rem;
+    }
+    
+}
 
 
 @media (max-width: 375px){
@@ -1203,9 +1262,15 @@ section {
 
     }
 
+
+    .subtext-reservations{
+        margin-left: -1.5rem;
+        margin-right: 1.5rem;
+    }
+
     .reservations-image{
-        width: 16rem;
-        margin-left: -2rem;
+        width: 19rem;
+        margin-right: -1rem;
     }
    
     .button-container{
