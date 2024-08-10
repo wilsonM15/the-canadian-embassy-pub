@@ -8,7 +8,7 @@
       .form {
         grid-template-columns: 1fr;
         width: 100%;
-        margin-left: 1rem;
+        margin-left: -1rem;
         margin-top: -2rem;
         
 
@@ -64,7 +64,7 @@
       .form {
         grid-template-columns: 1fr;
         width: 100%;
-        margin-left: 1rem;
+        margin-left: 0rem;
         margin-top: -2rem;
         
 
@@ -125,8 +125,8 @@
         justify-content: center;
         grid-template-columns: 1fr;
         width: 100%;
-        margin-left: 1.5rem;
-        margin-right: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
         margin-top: -2rem;
         padding-right: 1.5rem;
       }
