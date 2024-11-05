@@ -9,3 +9,16 @@ ScrollReveal({
   ScrollReveal().reveal('.', {origin: 'top'});
   ScrollReveal().reveal('.container-square, .image-pair, .about-us-container, .menu-container, .sports-section, .reservations-section', {origin: 'bottom'});
   
+
+
+
+
+  function debounce(func, wait) {
+    let timeout;
+    return function(...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+}
+
+window.addEventListener('scroll', debounce(yourScrollFunction, 100));
