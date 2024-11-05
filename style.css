@@ -67,22 +67,22 @@ section {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #ffffff;
-    width: 10rem;
-    box-shadow: 0px z8px 16px 0px rgba(8, 7, 7, 0.2);
+    background-color: var(--background-color);
+    width: 15rem;
+    height: 90rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    border-radius: 1rem;
-    margin: 0rem -0rem 0rem -6.1rem;
+    border-radius: 1px;
+    margin: 0rem 0rem 0rem -10rem;
 }
 
 
 .dropdown-content a {
-    color: black;
+    color: rgb(244, 241, 241);
     padding: 12px 12px;
     text-decoration: none;
     display: block;
-    text-align: center;
-    border-radius: 2rem;
+    text-align: left;
 }
 
 
@@ -356,7 +356,7 @@ section {
 
 .time-open{
     padding: 1rem 1rem 1rem 1rem;
-    margin-top: 10rem;
+    margin-top: -1rem;
     margin-bottom: 20rem;
     margin-left: 0rem;
     margin-right: 0rem;
@@ -523,53 +523,9 @@ section {
     
 }
 
-.friends{
-    border-radius: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; 
-}
-
-#family-friendly{
-    text-align: center;
-    font-size: 1.1rem;
-    font-family: "inter";
-    color: var(--primary-color);
-    padding: 1rem 0rem 0rem 0rem; 
-    
-}
-
-#family-friendly-subtext{
-    text-align: center;
-    font-size: .7rem;
-    font-family: "inter";
-    color: var(--primary-color);
-    padding: .5rem 0rem 0rem 0rem; 
-  
-}
-
-
-.canada-day{
-    border-radius: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: -12rem;
-}
-
-#canada-day{
-    text-align: center;
-    font-size: 1.1rem;
-    font-family: "inter";
-    color: var(--primary-color); 
-    padding: 1rem 0rem 0rem 0rem;
-    
-}
 
 .sports-w-friends{
-    margin-top: 6rem;
+    margin-top: 0rem;
     border-radius: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -591,13 +547,14 @@ section {
 /*------------------------ABOUT US----------------*/
 
 .about-us-container{
+    display: inline-block;
     color: var(--primary-color);
     text-align: center;
-    padding: 5rem 2rem 0rem 2rem;
-    margin-top: 8rem;
+    padding: 2rem 1rem;
     border-radius: 10px;
     text-shadow: #01231f 1px 1px;
-    width: fit-content;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-us{
@@ -605,30 +562,30 @@ section {
     font-size: 2.5rem;
     font-family: "inter";
     color: var(--primary-color);
-    padding: 2rem;
+    padding-top: 5rem;
+    margin-left: 1rem;
 }
 
 .about-us-text{
     font-size: 1.5rem;
     font-family: "poppins";
     color: rgb(245, 241, 241);
-    padding: 1rem 2rem 0rem 2rem;
+    padding: 1rem 1rem;
     text-align:justify;
-    width: 35rem;
     margin: 0 auto;
-    margin-top: 5rem;
-
+    margin-top: 2rem;
 }
-
 
 
 .all-staff{
     width: 340px;
     height: 250px;
+    overflow: hidden;
     object-fit: cover;
-    margin: 4rem 0rem;
-    border-radius: 1.5rem;
+    border-radius: 15px;
     padding: 1rem;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -637,43 +594,36 @@ section {
 /* =============================OUR MENU====================================*/
 
 .menu-container{
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 5rem 2rem 0rem 2rem;
-    margin: 2rem 0rem;
+    padding: 2rem 1rem;
 }
+
 
 .our-menu{
     font-size: 2.5rem;
     color: var(--primary-color);
     font-family: "inter";
-    text-align: center;
-    margin-top: -10rem;
     
 }
-
 
 
 #text-menu{
     font-size: 1.5rem;
     color: var(--primary-color);
-    margin-top: -17rem;
-    padding: 1rem 2rem 0rem 2rem;
+    padding: 1rem 1rem;
     font-family: "poppins";
     text-align: justify;
-    width: 36rem;
 }
 
 #subtext-menu{
     font-size: 1.5rem;
     font-family: "poppins";
     color: var(--primary-color);
-    margin-top: -25rem;
-    padding: 5rem 2rem 0rem 2rem;
+    padding: 1rem 1rem;
     text-align:justify;
-    width: 36rem;
     
 }
 
@@ -681,7 +631,6 @@ section {
     width: 12rem;
     height: 6rem;
     object-fit: cover;
-    margin-top: -10rem;
     border-radius: 5%;
     box-shadow: 0px 8px 16px 0px rgba(18, 15, 15, 0.2);
     background-color: pink;
@@ -706,107 +655,11 @@ section {
 }
 /*------------------------sub-section-menu----------------------*/
 
-/*---------------------
-.sub-section-menu{
-   
-}
-
-.starter-container{
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0rem 2rem 0rem 2rem;
-    padding: 2rem 2rem;
-    right: 45%;
-}
-
-.starters{
-    font-size: 2rem;
-    color: var(--primary-color);
-    font-family: "montserrat-bold";
-    text-align: center;
-    margin: 0rem 5rem;
-    line-height: 5rem;
-}
-
-.item{
-    font-size: 1.4rem;
-    color: var(--primary-color);
-    font-family: "inter";
-    text-align: center;
-    line-height: 3rem;
-}
-
-
-.burgers-container{
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0rem 1rem 0rem 5rem;
-    padding: 2rem 2rem;
-    left: 39%;
-}
-
-.burgers{
-    font-size: 2rem;
-    color: var(--primary-color);
-    font-family: "montserrat-bold";
-    text-align: center;
-    margin: 0rem 5rem;
-    line-height: 5rem;
-}
-
-.sandwiches-container{
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 25rem 2rem 0rem 2rem;
-    padding: 2rem 2rem;
-    right: 39%;
-}
-
-.sandwiches{
-    font-size: 2rem;
-    color: var(--primary-color);
-    font-family: "montserrat-bold";
-    text-align: center;
-    margin: 0rem 5rem;
-    line-height: 5rem;
-}
-
-.beverages-container{
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 25rem 2rem 0rem 1rem;
-    padding: 2rem 2rem;
-    left: 45%;
-}
-
-.beverages{
-    font-size: 2rem;
-    color: var(--primary-color);
-    font-family: "montserrat-bold";
-    text-align: center;
-    margin: 0rem 5rem;
-    line-height: 5rem;
-}
-
---------------------*/
 
 /* ==========================SPORTS SECTION=======================================*/
 
 .sports-section{
-    margin: 2rem 0rem;
-    padding: 5rem 2rem 0rem 2rem;
+    padding: 2rem 1rem;
 }
 
 .sports{
@@ -917,6 +770,18 @@ section {
     
 }
 
+/* Basic styling for the field */
+.sports-field {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent; /* Light blue background for a "sky" look */
+    overflow: hidden; /* Hide objects as they move out of the screen */
+}
+
+
+
+
 
 
 
@@ -928,6 +793,7 @@ section {
     justify-content: center;
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-top: 1rem;
 
 }
 
@@ -937,36 +803,46 @@ section {
    font-family: "inter";
    padding: 1rem;
    color: var(--primary-color);
-   margin-top: -5rem;
    padding-bottom: 2rem;
 
 }
 
 .subtext-reservations{
     text-align: justify;
-    width: 36rem;
-    margin: 0 auto;
     font-size: 1.5rem;
     font-weight: 400;
     font-family: "poppins";
     color: var(--primary-color);
-    padding: 1rem 2rem 2rem 1rem;
+    padding: 2rem 1rem;
     
 
 }
 
-.reservations-image{
-    display: inline-block;
-    width: auto;
-    width: 20rem;
-    height: 30rem;
-    object-fit: cover;
-    margin: 2rem 1rem 0rem -2rem;
-    border-radius: 2rem;
-    box-shadow: 0px 8px 16px 0px rgba(18, 15, 15, 0.2);
+.reserve-container{
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     justify-content: center;
-    text-align: center;
+    background-color: rgb(255, 253, 255);
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.reservations-image{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    transform: translate(-0%);
    
 }
 
@@ -983,8 +859,6 @@ section {
     background-color: var(--primary-color);
     box-shadow: 0px 8px 16px 0px rgba(18, 15, 15, 0.2);
     padding: 2rem 2rem;
-    margin-left: 23rem;
-    margin-top: -25rem;
 }
 
 .event-reservations:hover{
@@ -1006,7 +880,6 @@ section {
 
 
 .table-reservations{
-    display: inline-flex;
     font-size: 1.4rem;
     text-align: center;
     align-items: center;
@@ -1016,7 +889,6 @@ section {
     border-radius: 5%;
     box-shadow: 0px 8px 16px 0px rgba(18, 15, 15, 0.2);
     padding: 2rem 2rem 2rem;
-    margin: 5rem 2rem 2rem 23rem; 
     color: #01231f;
     background-color: var(--primary-color);
 }
@@ -1037,7 +909,6 @@ section {
     color: var(--quaternary-color);
     text-decoration: none;
 }
-
 
 
 
@@ -1198,9 +1069,9 @@ section {
 }
 
 
+/*
 
-
-@media (min-width: 321px) and (max-width: 357px) {
+@media (min-width: 321px){
     .logo h1{
         padding-left: 1rem;
     }
@@ -1231,10 +1102,9 @@ section {
     }
 
     .reservations-image{
-        position: relative;
-        width: 19rem;
-        height: 25rem;
-        left: -3rem;
+        width: 10rem;
+        height: 2rem;
+        left: 0rem;
     }
    
     .button-container{
@@ -1261,8 +1131,7 @@ section {
     
 }
 
-
-@media (max-width: 375px){
+@media (min-width: 335px){
 
     #image5{
         visibility: hidden;
@@ -1283,10 +1152,11 @@ section {
     }
 
     .reservations-image{
-        width: 25rem;
+        width: 20rem;
         height: 29rem;
-        left: -3rem;
+        left: -2rem;
         position: relative;
+        bottom: 3rem;
 
     }
    
@@ -1306,7 +1176,7 @@ section {
 }
 
 
-@media (max-width: 392px){
+@media (min-width: 361px) and (max-width:400px){
 
     #image5{
         visibility: hidden;
@@ -1333,7 +1203,7 @@ section {
     } 
 }
 
-@media (max-width: 455px){
+@media (max-width: 453px){
     .logo h1{
         margin-left: -3rem;
     }
