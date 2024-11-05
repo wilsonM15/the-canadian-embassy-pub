@@ -11,6 +11,7 @@
 }
 
 html{
+    overflow-x: scroll;
     width: auto;
     scroll-behavior: smooth;
     background-color: var(--background-color);
