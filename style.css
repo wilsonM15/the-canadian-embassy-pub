@@ -428,8 +428,6 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: -35rem;
-    margin-bottom: 1rem;
     padding: 1rem;
    
 
@@ -549,6 +547,7 @@ section {
 /*------------------------ABOUT US----------------*/
 
 .about-us-container{
+    margin-top: 35rem;
     display: inline-block;
     color: var(--primary-color);
     text-align: center;
