@@ -1,3 +1,890 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', 'Inter', 'Poppins', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 62.5%;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+}
+
+body {
+    overflow: hidden;
+    overscroll-behavior: none;
+    font-display: swap;
+    padding: 1rem;
+}
+
+/* Root Variables */
+:root {
+    --background-color: #01231f;
+    --primary-color: white;
+    --secondary-color: pink;
+    --tertiary-color: rgb(196, 11, 11);
+    --quaternary-color: black;
+}
+
+/* General Section Styling */
+section {
+    height: 100dvh;
+    width: 100%;
+    padding: 10rem 9% 2rem;
+    z-index: 1000;
+}
+
+/* Navigation and Dropdown Menu */
+.dropdown {
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    display: inline-block;
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    width: 15rem;
+    height: 50rem;
+    box-shadow: 0px 8px 16px transparent;
+    z-index: 1;
+    border-radius: 1px;
+    margin-left: -10rem;
+}
+
+.dropdown-content a {
+    color: rgb(249, 245, 245);
+    padding: 12px;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f8f3f3;
+    color: var(--background-color);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: rgb(249, 242, 242);
+    font-size: 2px;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--background-color);
+    max-width: 1rem;
+    max-height: 5rem;
+}
+
+.logo h1 {
+    margin: -9rem -2rem;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    font-family: "Rye";
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.home-section{
+    height: auto;
+}
+
+/* Main Title */
+.main-title {
+    text-align: center;
+    font-size: 6.5rem;
+    font-weight: bold;
+    font-family: "Staatliches";
+    margin-top: 1rem;
+    text-shadow: #01231f 5px 5px;
+    animation: scale-up-center 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Images Styling */
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.images img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(8, 7, 7, 0.2);
+}
+
+/* Social Media Icons */
+.social-icons {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.maple-leaf{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 2rem;
+    color: red;
+}
+
+.explore {
+    text-align: center;
+    font-size: 1.2em;
+   
+     margin-left: 0rem;
+  
+}
+
+
+
+
+/* Opening Times */
+
+.time-open{
+    padding: 2rem 2rem;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 95%;
+}
+
+.container-square{
+    display: flex; /* Flexbox to align child elements if needed */
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: auto; /* Let the height adjust dynamically */
+    max-height: 90rem; /* Maintain the maximum height */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional for aesthetics */
+    z-index: 1; /* Optional for stacking */
+    color: var(--primary-color);
+    text-align: center;
+    padding: 2rem 1rem;
+    width: 100%; /* Use percentage for responsiveness */
+    max-width: 100rem; /* Maintain the maximum width */
+   
+
+
+}
+.opening-times {
+    text-align: center;
+    margin-top: 5rem;
+    font-family: "Staatliches";
+}
+
+.opening {
+    font-size: 4.5rem;
+    color: rgb(6, 6, 6);
+}
+
+.hours {
+    font-size: 1.7rem;
+    color: rgb(6, 6, 6);
+}
+
+#time-changes{
+    text-align: center;
+    margin-top: 7rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Staatliches";
+    color: rgb(6, 6, 6);
+}
+
+
+
+
+.squares{
+    display: flex; /* Flexbox to align child elements if needed */
+    border-radius: 10px;
+    width: 100%; /* Use percentage for responsiveness */
+    max-width: 100rem; /* Maintain the maximum width */
+    height: auto; /* Let the height adjust dynamically */
+    max-height: 47rem; /* Maintain the maximum height */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Optional for stacking */
+    color: var(--primary-color);
+    text-align: center;
+    padding: 2rem 1rem;
+  
+}
+   
+     
+
+.slider {
+    position: relative;
+    width: 400px;
+    height: 400px; /* Adjust based on your preferred height */
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    left: 0%;
+    transition: transform 0.8s ease-in;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*.text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}*/
+
+/* Fade effect */
+.fade {
+    animation: fadeEffect 19s infinite;
+}
+
+@keyframes fadeEffect {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    40% { opacity: 0; }
+    60% { opacity: 0; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+#poutine {
+    position: absolute;
+    text-align: left;
+    top: 10%;
+    left: -1%;
+    right: 15%;
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
+    background: rgba(0, 0, 0, 0.6); /* Optional: adds a dark background for readability */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: matches image styling */
+    color: #fff; /* White text for contrast */
+}
+
+.solo-pool-table{
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    bottom: 500%;
+}
+
+
+#pool-table{
+    position: absolute;
+    text-align: right;
+    top: 70%;
+    left: 4%;
+    right: 7%;
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
+    background: rgba(0, 0, 0, 0.6); /* Optional: adds a dark background for readability */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: matches image styling */
+    color: #fff; /* White text for contrast */
+    font-weight: 400;
+
+    
+}
+
+#sports-w-friends{
+    position: absolute;
+    text-align: right;
+    top: 10%;
+    left: 4%;
+    right: 7%;
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
+    background: rgba(0, 0, 0, 0.6); /* Optional: adds a dark background for readability */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: matches image styling */
+    color: #fff; /* White text for contrast */
+    font-weight: 400;
+}
+
+.about-us{
+    display: flex;
+    font-size: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
+    background: rgba(0, 0, 0, 0.6); /* Optional: adds a dark background for readability */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: matches image styling */
+    color: #fff; /* White text for contrast */
+}
+
+.about-us-container{
+    height: auto;
+    display: inline-block;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    text-shadow: #01231f 1px 1px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.all-staff{
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex; /* Flexbox to align child elements if needed */
+    border-radius: 10px;
+    width: 100%; /* Use percentage for responsiveness */
+    max-width: 100rem; /* Maintain the maximum width */
+    height: auto; /* Let the height adjust dynamically */
+    max-height: 37rem; /* Maintain the maximum height */
+    flex-wrap: wrap;
+    z-index: 1; /* Optional for stacking */
+  
+}
+
+.about-us-text{
+    font-size: 1.5rem;
+    font-family: "poppins";
+    color: rgb(245, 241, 241);
+    padding: 1rem 1rem;
+    text-align:justify;
+    margin: 0 auto;
+}
+
+.menu-container{
+    height: auto;
+    padding: 2rem;
+}
+
+.our-menu{
+    display: flex;
+    font-size: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
+    background: rgba(0, 0, 0, 0.6); /* Optional: adds a dark background for readability */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: matches image styling */
+    color: #fff; /* White text for contrast */
+}
+
+
+#text-menu{
+    font-size: 1.5rem;
+    font-family: "poppins";
+    color: rgb(245, 241, 241);
+    text-align:justify;
+    margin: 0 auto;
+    padding-top: 2.5rem;
+}
+
+#subtext-menu{
+    font-size: 1.5rem;
+    font-family: "poppins";
+    color: rgb(245, 241, 241);
+    padding-top: 1.5rem;
+    text-align:justify;
+    margin: 0 auto;
+    
+}
+
+.menu-button{
+    width: 12rem;
+    height: 6rem;
+    object-fit: cover;
+    border-radius: 5%;
+    box-shadow: 0px 8px 16px 0px rgba(18, 15, 15, 0.2);
+    background-color: pink;
+    margin-top: 4rem;
+    
+}
+
+.menu-button:hover{
+    transform: scale(1.1);
+    background-color: var(--primary-color);
+    color: pink;
+}
+
+.menu-button a{
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.menu-button a:hover{
+    color: var(--secondary-color);
+    font-size: 1.7rem;
+}
+
+
+.sports-section{
+   height: auto;
+}
+
+.sports{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+    font-size: 7rem;
+    font-family: "inter";
+}
+
+.subtext-sports{
+    text-align: right;
+    font-size: 2rem;
+    font-family: "inter";
+    color: var(--primary-color);
+    padding: 1rem 0rem;
+    letter-spacing: .9px;
+    text-transform: capitalize;
+}
+
+
+.text-sports{
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: "inter";
+    color: var(--primary-color);
+    margin-top: 12rem;
+    letter-spacing: .9px;
+}
+
+
+
+
+.button-schedule{
+    background-color: white;
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: "inter";
+    margin-top: 5rem;
+    letter-spacing: .9px;
+    text-transform: capitalize;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 5%;
+ }
+          
+      
+      
+.button-schedule a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.3rem;
+    padding: 0%;
+
+}
+
+.button-schedule a:hover{
+    color: var(--secondary-color);
+    text-shadow: #01231f 2px;
+    font-weight: 700;
+    
+}
+
+
+
+
+.reservations-section{
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    height: auto;
+    margin-top: 5rem;
+    
+
+}
+
+.reservations{
+    display: flex;
+    font-size: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
+    background: rgba(0, 0, 0, 0.6); /* Optional: adds a dark background for readability */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: matches image styling */
+    color: #fff; /* White text for contrast */
+ }
+ 
+ .subtext-reservations{
+    font-size: 1.5rem;
+    font-family: "poppins";
+    color: rgb(245, 241, 241);
+    text-align:justify;
+    margin: 0 auto;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    font-weight: 400;
+ 
+ }
+ 
+ .reserve-container{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px;
+     max-width: 500px;
+     margin: auto;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     justify-content: center;
+     background-color: rgb(255, 253, 255);
+ }
+ 
+ .button-container {
+     display: flex;
+     gap: 10px;
+     margin-top: 15px;
+ }
+ 
+ .reservations-image{
+     width: 100%;
+     height: auto;
+     max-width: 100%;
+     border-radius: 8px;
+     transform: translate(-0%);
+    
+ }
+ 
+ .event-reservations{
+     display: flex;
+     width: 12rem;
+     height: 5rem;
+     font-size: 1.2rem;
+     font-family: "Inter";
+     color: var(--primary-color);
+     text-align: center;
+     align-items: center;
+     border-radius: 5%;
+     background-color: var(--primary-color);
+     box-shadow: 0px 8px 16px 0px rgba(18, 15, 15, 0.2);
+     padding: 2rem 2rem;
+ }
+ 
+ .event-reservations:hover{
+     transform: scale(1.1);
+     background-color: var(--primary-color);
+     color: var(--secondary-color);
+ }
+ 
+ .event-reservations a:hover{
+     color: var(--secondary-color);
+     text-decoration: none;
+ }
+ 
+ .event-reservations a{
+     color: var(--quaternary-color);
+     text-decoration: none;
+ }
+ 
+ 
+ 
+ .table-reservations{
+     font-size: 1.4rem;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     width: 12rem;
+     height: 5rem;
+     border-radius: 5%;
+     box-shadow: 0px 8px 16px 0px rgba(18, 15, 15, 0.2);
+     padding: 2rem 2rem 2rem;
+     color: #01231f;
+     background-color: var(--primary-color);
+ }
+ 
+ .table-reservations:hover{
+     transform: scale(1.1);
+     background-color: var(--primary-color);
+     color: var(--secondary-color);
+ 
+ }
+ 
+ .table-reservations a:hover{
+     color: var(--secondary-color);
+     text-decoration: none;
+ }
+ 
+ .table-reservations a{
+     color: var(--quaternary-color);
+     text-decoration: none;
+     text-align: center;
+ }
+ 
+
+
+
+
+
+
+ .footer-section{
+    margin-top: 15rem;
+     background-color:black;
+     justify-content: center;
+     align-items: center;
+     padding: 7rem 1rem;
+     width: 100dvh;
+     height: 40dvh;
+     height: auto;
+ }
+
+
+ .links-container{
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+#quick-links{
+    font-size: 1.5rem;
+    font-family: "Inter";
+    letter-spacing: .9px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+
+.links ul{
+    text-align: left;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-family: "Inter";
+    letter-spacing: .9px;
+    text-transform: capitalize;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.links li a{
+    color: var(--primary-color);
+}
+
+.links li a:hover{
+    color: var(--secondary-color);
+}
+
+.explore-container{
+    display: block;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 2rem 2rem;
+    margin-left: 18rem;
+    margin-top: -14rem;
+}
+
+
+#explore{
+    font-size: 1.5rem;
+    font-family: "Inter";
+    letter-spacing: .9px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+
+.explore-our-world{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-family: "Inter";
+    letter-spacing: .9px;
+}
+
+.explore-our-world ul{
+    text-transform: capitalize;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.explore-our-world li a{
+    color: var(--primary-color);
+    text-align: left;
+
+}
+
+
+.contact-container{
+    display: block;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 2rem 2rem;
+    margin-left: 18rem;
+    margin-top: -14rem;
+}
+
+
+#contact{
+    font-size: 1.5rem;
+    font-family: "Inter";
+    letter-spacing: .9px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.contact-us ul{
+    list-style-type: none;
+}
+
+.contact-us li a{
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-family: "Inter";
+    letter-spacing: .9px;
+    text-transform: capitalize;
+    transition: color 0.3s;
+    display: inline-block;
+    margin-bottom: .5rem;
+    &:hover{
+        color: var(--secondary-color);
+    }
+}
+
+
+.footer{
+    font-size: .9rem;
+    font-family: "Inter";
+    letter-spacing: .9px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    margin-top: 4rem;
+}
+
+.footer a{
+    color: var(--primary-color);
+    font-size: .9rem;
+
+
+}
+
+.footer p{
+    font-size: .6rem;
+    font-family: "Inter";
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+.footer a:hover{
+    color: rgb(14, 62, 146);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 5rem;
+    }
+
+    .dropdown-content {
+        width: 12rem;
+    }
+}
+
+
+
+
+
+/*
+
 *{
     margin: 0;
     padding: 0;
@@ -52,7 +939,7 @@ section {
     
 }*/
 /*------------Dropdown---------------*/
-
+/*
 .dropdown {
     display: flex;
     flex-wrap: wrap;
@@ -121,7 +1008,7 @@ section {
 }
 
 /*------------------------------LOGO---------------------------*/
-
+/*
 .logo {
     position: absolute;
     display: flex;
@@ -145,7 +1032,7 @@ section {
 
 
 /*---------------------------TITLE&IMAGES------------------------*/
-
+/*
 .container {
     display: flex;
     flex-direction: column;
@@ -281,7 +1168,7 @@ section {
 
 /* =============================maple leaf=========================*/
 
-
+/*
 .maple-leaf{
     text-align: center;
     font-size: 4rem;
@@ -357,7 +1244,7 @@ section {
 
 
 /*-------------OPENING TIMES--------------------*/
-
+/*
 .time-open{
     padding: 1rem 1rem 1rem 1rem;
     margin-top: -1rem;
@@ -424,7 +1311,7 @@ section {
 
 
 /*----------------------6 SQUARES------------------------*/
-
+/*
 .squares{
     display: inline-flex;
     flex-wrap: wrap;
@@ -547,7 +1434,7 @@ section {
 
 
 /*------------------------ABOUT US----------------*/
-
+/*
 .about-us-container{
     margin-top: 35rem;
     display: inline-block;
@@ -595,7 +1482,7 @@ section {
 
 
 /* =============================OUR MENU====================================*/
-
+/*
 .menu-container{
     display: inline-flex;
     flex-wrap: wrap;
@@ -660,7 +1547,7 @@ section {
 
 
 /* ==========================SPORTS SECTION=======================================*/
-
+/*
 .sports-section{
     padding: 2rem 1rem;
 }
@@ -774,13 +1661,14 @@ section {
 }
 
 /* Basic styling for the field */
+/*
 .sports-field {
     position: relative;
     width: 100vw;
     height: 100vh;
     background-color: transparent; /* Light blue background for a "sky" look */
-    overflow: hidden; /* Hide objects as they move out of the screen */
-}
+   /* overflow: hidden; /* Hide objects as they move out of the screen */
+/*}/*
 
 
 
@@ -789,7 +1677,7 @@ section {
 
 
 /*------------------------RESERVATIONS SECTION-----------------*/
-
+/*
 
 .reservations-section{
     align-items: center;
@@ -916,6 +1804,7 @@ section {
 
 
 /*-------------FOOTER DESIGN------------*/
+/*
 .footer-section{
    margin-top: 15rem;
     background-color:black;
@@ -1003,7 +1892,7 @@ section {
 
 --------------------_*/
 
-
+/*
 .contact-container{
     display: block;
     flex-wrap: wrap;
